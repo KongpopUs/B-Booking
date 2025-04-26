@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎫 B-Booking</title>
+  <style>
+    body {
+      background: url('wpp4.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Kanit', sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+      color: #fff;
+    }
+
+    header {
+      margin-top: 40px;
+      font-size: 36px;
+      font-weight: bold;
+      color: #2c7be5;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+
+    .schedule-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      width: 100%;
+      max-width: 1000px;
+      margin-top: 40px;
+      padding: 20px;
+    }
+
+    .show-card {
+      background: rgba(255, 255, 255, 0.6);
+      backdrop-filter: blur(10px);
+      border-radius: 16px;
+      width: 80%;
+      margin: 20px 0;
+      padding: 25px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .show-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 35px rgba(44,123,229,0.4);
+    }
+
+    .show-name {
+      font-size: 24px;
+      font-weight: bold;
+      color: #2c7be5;
+      margin-bottom: 10px;
+    }
+
+    .show-details {
+      font-size: 18px;
+      color: #444;
+      margin-bottom: 15px;
+    }
+
+    .status {
+      font-size: 16px;
+      color: #28a745;
+      font-weight: bold;
+    }
+
+    .status-closed {
+      color: #dc3545;
+    }
+
+    .register-btn {
+      margin-top: 15px;
+      background: linear-gradient(135deg, #2c7be5 0%, #4fa8f9 100%);
+      color: white;
+      font-weight: bold;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 18px;
+      box-shadow: 0 6px 15px rgba(44,123,229,0.5);
+      transition: background 0.4s, transform 0.2s, box-shadow 0.4s;
+      text-decoration: none;
+      display: block;
+      text-align: center;
+      margin-left: auto; /* ขยับปุ่มไปทางขวา */
+    }
+
+    .register-btn:hover {
+      background: linear-gradient(135deg, #1d5bbf 0%, #3693e0 100%);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(44,123,229,0.7);
+    }
+
+    .back-btn {
+      margin-top: 40px;
+      background: linear-gradient(135deg, #2c7be5 0%, #4fa8f9 100%);
+      color: white;
+      font-weight: bold;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 18px;
+      box-shadow: 0 6px 15px rgba(44,123,229,0.5);
+      transition: background 0.4s, transform 0.2s, box-shadow 0.4s;
+      text-decoration: none;
+    }
+
+    .back-btn:hover {
+      background: linear-gradient(135deg, #1d5bbf 0%, #3693e0 100%);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(44,123,229,0.7);
+    }
+  </style>
+</head>
+<body>
+
+  <header>🎭 รอบการแสดง</header>
+
+  <div class="schedule-container">
+    <div class="show-card">
+      <div class="show-name">การแสดง A</div>
+      <div class="show-details">เวลา: 14:00 น. | วันที่: 1 พฤษภาคม 2568</div>
+      <div class="status">สถานะ: <span class="status">เปิดการลงทะเบียน</span></div>
+      <a href="home.html" class="register-btn">ลงทะเบียน</a>
+    </div>
+
+    <div class="show-card">
+      <div class="show-name">การแสดง B</div>
+      <div class="show-details">เวลา: 18:00 น. | วันที่: 25 กรกฎาคม 2568</div>
+      <div class="status">สถานะ: <span class="status status-closed">ปิดการลงทะเบียน</span></div>
+    </div>
+
+    <div class="show-card">
+      <div class="show-name">การแสดง C</div>
+      <div class="show-details">เวลา: 20:30 น. | วันที่: 19 มิถุนายน 2568</div>
+      <div class="status">สถานะ: <span class="status status-closed">ปิดการลงทะเบียน</span></div>
+    </div>
+  </div>
+  <a href="index.html" class="back-btn">ออกจากระบบ</a>
+
+</body>
+</html>

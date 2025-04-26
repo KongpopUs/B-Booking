@@ -1,99 +1,126 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>B-Booking</title>
-    <style>
-        body {
-            background: #f0f4f8;
-            font-family: 'Kanit', sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-        .login-container {
-            background: white;
-            padding: 40px 30px;
-            border-radius: 16px;
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            width: 350px;
-        }
-        input[type="text"],
-        input[type="password"] {
-            width: 100%;
-            padding: 12px;
-            margin: 10px 0;
-            border: 2px solid #3498db;
-            border-radius: 8px;
-            font-size: 16px;
-            text-align: left;
-            box-sizing: border-box;
-        }
-        .login-btn {
-            background-color: #f1c40f;
-            color: #000;
-            font-weight: bold;
-            padding: 12px;
-            border: none;
-            border-radius: 8px;
-            width: 100%;
-            cursor: pointer;
-            margin-top: 20px;
-            font-size: 16px;
-            transition: background-color 0.3s;
-        }
-        .login-btn:hover {
-            background-color: #d4ac0d;
-        }
-        .developer-link {
-            margin-top: 20px;
-            font-size: 14px;
-            color: #555;
-        }
-        .developer-link a {
-            color: #3498db;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .developer-link a:hover {
-            text-decoration: underline;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎫 B-Booking</title>
+  <style>
+    body {
+      background: url('wpp5.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Kanit', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .login-container {
+      background: rgba(255, 255, 255, 0.65);
+      backdrop-filter: blur(10px);
+      padding: 50px 35px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+      text-align: center;
+      width: 360px;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+    }
+
+    h2 {
+      font-size: 36px;
+      color: #2c7be5;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+      margin-bottom: 30px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 14px;
+      margin: 10px 0;
+      border: 2px solid #2c7be5;
+      border-radius: 10px;
+      font-size: 16px;
+      background: rgba(255, 255, 255, 0.85);
+      box-sizing: border-box;
+      transition: all 0.3s ease;
+    }
+
+    input[type="text"]:focus,
+    input[type="password"]:focus {
+      border-color: #1d5bbf;
+      outline: none;
+      box-shadow: 0 0 8px rgba(44, 123, 229, 0.5);
+    }
+
+    .login-btn {
+      background: linear-gradient(135deg, #2c7be5 0%, #4fa8f9 100%);
+      color: white;
+      font-weight: bold;
+      padding: 14px;
+      border: none;
+      border-radius: 10px;
+      width: 100%;
+      cursor: pointer;
+      margin-top: 20px;
+      font-size: 18px;
+      box-shadow: 0 6px 15px rgba(44, 123, 229, 0.5);
+      transition: background 0.4s, transform 0.2s, box-shadow 0.4s;
+    }
+
+    .login-btn:hover {
+      background: linear-gradient(135deg, #1d5bbf 0%, #3693e0 100%);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(44, 123, 229, 0.7);
+    }
+
+    .developer-link {
+      margin-top: 25px;
+      font-size: 15px;
+      color: #555;
+    }
+
+    .developer-link a {
+      color: #1f54da;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .developer-link a:hover {
+      color: #133b99;
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-    <div class="login-container">
-        <h2>🎫 B-Booking</h2>
-        <form onsubmit="login(event)">
-            <input type="text" id="username" placeholder="ชื่อผู้ใช้ (Username)" required>
-            <input type="password" id="password" placeholder="รหัสผ่าน (Password)" required>
-            <button type="submit" class="login-btn">เข้าสู่ระบบ</button>
-        </form>
-        <div class="developer-link">
-            👨‍💻 ดูทีมพัฒนา <a href="developer.html">คลิกที่นี่</a>
-        </div>
+
+  <div class="login-container">
+    <h2>🎫 B-Booking</h2>
+    <form onsubmit="login(event)">
+      <input type="text" id="username" placeholder="ชื่อผู้ใช้ (Username)" required>
+      <input type="password" id="password" placeholder="รหัสผ่าน (Password)" required>
+      <button type="submit" class="login-btn">เข้าสู่ระบบ</button>
+    </form>
+    <div class="developer-link">
+      👨‍💻 ดูทีมผู้พัฒนาระบบ? <a href="developer.html">คลิกที่นี่</a>
     </div>
+  </div>
 
-    <script>
-        function login(event) {
-            event.preventDefault(); // ไม่รีเฟรชหน้า
+  <script>
+    function login(event) {
+      event.preventDefault();
+      const username = document.getElementById('username').value.trim();
+      const password = document.getElementById('password').value.trim();
+      if (username && password) {
+        sessionStorage.setItem('username', username);
+        window.location.href = 'show.html';
+      } else {
+        alert('กรุณากรอกข้อมูลให้ครบถ้วน');
+      }
+    }
+  </script>
 
-            const username = document.getElementById('username').value.trim();
-            const password = document.getElementById('password').value.trim();
-
-            if (username && password) {
-                // บันทึกชื่อผู้ใช้ใน localStorage
-                sessionStorage.setItem('username', username);
-
-                // ไปหน้า home.html
-                window.location.href = 'home.html';
-            } else {
-                alert('กรุณากรอกข้อมูลให้ครบถ้วน');
-            }
-        }
-    </script>
 </body>
 </html>

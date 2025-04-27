@@ -31,12 +31,12 @@
   แสดงแผนผังที่นั่ง สามารถเลือกและจองที่นั่งได้แบบอินเทอร์แอคทีฟ
   ![Alt text](frontend_page/booking_page.png)
 
-- **หน้าประวัติการจอง (Booking History Page)**  
-  แสดงประวัติการจองที่นั่งย้อนหลังของผู้ใช้งาน
+- **หน้าดูการจองที่นั่ง (Booking Seat Page)**  
+  แสดงการจองที่นั่งของผู้ใช้งาน
   ![Alt text](frontend_page/recent_booking_page.png)
 
-- **หน้าผู้ดูแลระบบ (Admin Dashboard)**  
-  สำหรับผู้ดูแลระบบ ใช้ตรวจสอบข้อมูลการจองและจัดการที่นั่ง
+- **หน้าการทำธุรกรรม (Transaction)**  
+  สำหรับผู้ใช้ เมื่อจะทำการจองและจัดการที่นั่ง
   ![Alt text](frontend_page/admin_page.png)
 
 - **หน้าข้อความแจ้งเตือน (Notification Page)**  

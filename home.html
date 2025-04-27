@@ -12,67 +12,97 @@
       background-size: cover;
       font-family: 'Kanit', sans-serif;
       padding: 20px;
-      color: #222; /* เปลี่ยนจาก #333 เป็น #222 เข้มขึ้น */
+      color: #222;
       margin: 0;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); /* เพิ่มเงาเบาๆให้ตัวหนังสือ */
+      justify-content: flex-start;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+      min-height: 100vh;
     }
-  
+
     h2 {
       font-size: 36px;
-      color: #ffffff; /* เปลี่ยนหัวเรื่องให้ขาวไปเลย */
+      color: #ffffff;
       margin-bottom: 20px;
-      text-shadow: 0 2px 4px rgba(0,0,0,0.4); /* ช่วยให้หัวเรื่องลอย */
+      text-shadow: 0 2px 4px rgba(0,0,0,0.4);
     }
-  
+
     #walletInfo {
       font-size: 18px;
-      color: #fff; /* ขาวชัด */
+      color: #fff;
       margin: 10px 0;
       text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
     }
-  
+
+    .connect-wallet-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+
+    .connect-wallet-container button {
+      margin-top: 10px;
+      font-size: 18px;
+    }
+
+    .screen {
+      width: 600px;
+      max-width: 90%;
+      height: 50px;
+      background: linear-gradient(90deg, #2c7be5 0%, #4fa8f9 100%);
+      color: white;
+      font-size: 22px;
+      font-weight: bold;
+      text-align: center;
+      line-height: 50px;
+      border-top-left-radius: 30px;
+      border-top-right-radius: 30px;
+      margin-bottom: 30px;
+      box-shadow: 0 8px 16px rgba(44,123,229,0.5);
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    }
+
     .grid {
       display: grid;
       grid-template-columns: repeat(10, 50px);
       gap: 10px;
-      margin-top: 20px;
+      margin-top: 10px;
       margin-bottom: 30px;
     }
-  
+
     .seat {
-    width: 50px;
-    height: 50px;
-    border-radius: 8px;
-    text-align: center;
-    line-height: 50px;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 14px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-  }
+      width: 50px;
+      height: 50px;
+      border-radius: 8px;
+      text-align: center;
+      line-height: 50px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 14px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
 
-  .available {
-    background: #e0e0e0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
+    .available {
+      background: #e0e0e0;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
 
-  .selected {
-    background: #2c7be5;
-    color: white;
-    transform: scale(1.2);
-    box-shadow: 0 4px 8px rgba(44, 123, 229, 0.4);
-  }
+    .selected {
+      background: #2c7be5;
+      color: white;
+      transform: scale(1.2);
+      box-shadow: 0 4px 8px rgba(44, 123, 229, 0.4);
+    }
 
-  .booked {
-    background: #666;
-    color: white;
-    cursor: not-allowed;
-  }
-  
+    .booked {
+      background: #666;
+      color: white;
+      cursor: not-allowed;
+    }
+
     button {
       background-color: #2c7be5;
       color: white;
@@ -84,65 +114,49 @@
       margin: 10px;
       transition: background-color 0.3s, transform 0.2s;
     }
-  
+
     button:hover {
       background-color: #1a5cb0;
       transform: translateY(-2px);
     }
-  
+
     .control {
       margin-top: 20px;
       display: flex;
       justify-content: center;
       gap: 15px;
+      flex-wrap: wrap;
     }
-  
-    .control button {
-      margin: 0;
-      font-size: 16px;
-    }
-  
+
     .my-seats-container {
       margin-top: 30px;
       width: 100%;
       max-width: 600px;
       padding: 20px;
-      background-color: rgba(255, 255, 255, 0.75); /* โปร่งใส 75% */
+      background-color: rgba(255, 255, 255, 0.75);
       border-radius: 16px;
       box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-      backdrop-filter: blur(5px); /* เบลอพื้นหลังนิดหน่อย */
+      backdrop-filter: blur(5px);
     }
-  
+
     .my-seats-container h3 {
       font-size: 24px;
       margin-bottom: 15px;
       color: #2c7be5;
     }
-  
+
     ul {
       list-style-type: none;
       padding: 0;
     }
-  
+
     li {
       font-size: 18px;
       color: #333;
       margin-bottom: 10px;
       text-shadow: 0 1px 1px rgba(0,0,0,0.2);
     }
-  
-    .connect-wallet-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-bottom: 30px;
-    }
-  
-    .connect-wallet-container button {
-      margin-top: 10px;
-      font-size: 18px;
-    }
-  
+
     #profileInfo {
       font-size: 20px;
       margin-bottom: 10px;
@@ -150,16 +164,21 @@
       text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
     }
   </style>
-  
+
 </head>
 <body>
-  <h2>🎫 B-Booking</h2>
-  <div id="profileInfo" style="font-size: 20px; margin-bottom: 10px; color: #ffffff; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);"></div>
 
+  <h2>🎫 B-Booking</h2>
+
+  <div id="profileInfo"></div>
 
   <div class="connect-wallet-container">
     <div id="walletInfo">🦊 ยังไม่ได้เชื่อมต่อบัญชี</div>
     <button onclick="connectWallet()">🔗 เชื่อมต่อ Metamask</button>
+  </div>
+
+  <div class="screen">
+    🎥 หน้าจอ
   </div>
 
   <div class="grid" id="seatGrid"></div>
@@ -177,7 +196,7 @@
   </div>
 
   <script src="script.js"></script>
-  
+
   <script>
     window.onload = () => {
       const username = sessionStorage.getItem("username");
@@ -186,6 +205,6 @@
       }
     }
   </script>
-  
+
 </body>
 </html>
